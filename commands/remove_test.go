@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/openfaas/faas-cli/test"
+	"github.com/innoobijr/faas-cli/test"
 )
 
 const testStack = `

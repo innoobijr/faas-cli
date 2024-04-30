@@ -9,7 +9,7 @@ import (
 	"text/tabwriter"
 
 	"github.com/mitchellh/go-wordwrap"
-	storeV2 "github.com/openfaas/faas-cli/schema/store/v2"
+	storeV2 "github.com/innoobijr/faas-cli/schema/store/v2"
 	"github.com/spf13/cobra"
 )
 

@@ -4,8 +4,8 @@
 package v1
 
 import (
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/schema"
+	"github.com/innoobijr/faas-cli/stack"
 )
 
 // APIVersionLatest latest API version of CRD

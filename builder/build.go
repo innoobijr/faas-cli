@@ -19,9 +19,9 @@ import (
 	"strings"
 
 	v2execute "github.com/alexellis/go-execute/v2"
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-cli/stack"
-	vcs "github.com/openfaas/faas-cli/versioncontrol"
+	"github.com/innoobijr/faas-cli/schema"
+	"github.com/innoobijr/faas-cli/stack"
+	vcs "github.com/innoobijr/faas-cli/versioncontrol"
 )
 
 // AdditionalPackageBuildArg holds the special build-arg keyname for use with build-opts.

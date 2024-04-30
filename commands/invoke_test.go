@@ -13,7 +13,7 @@ import (
 	"io/ioutil"
 
 	"github.com/alexellis/hmac"
-	"github.com/openfaas/faas-cli/test"
+	"github.com/innoobijr/faas-cli/test"
 )
 
 func Test_invoke(t *testing.T) {

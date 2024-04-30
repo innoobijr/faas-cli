@@ -3,7 +3,7 @@
 
 package v1
 
-import "github.com/openfaas/faas-cli/schema"
+import "github.com/innoobijr/faas-cli/schema"
 
 const APIVersionLatest = "serving.knative.dev/v1"
 

@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-provider/types"
+	"github.com/innoobijr/faas-cli/schema"
+	"github.com/innoobijr/faas-provider/types"
 )
 
 func Test_getFunctionURLs(t *testing.T) {

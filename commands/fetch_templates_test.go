@@ -12,8 +12,8 @@ import (
 	"github.com/Masterminds/semver"
 	v2execute "github.com/alexellis/go-execute/v2"
 
-	"github.com/openfaas/faas-cli/builder"
-	"github.com/openfaas/faas-cli/versioncontrol"
+	"github.com/innoobijr/faas-cli/builder"
+	"github.com/innoobijr/faas-cli/versioncontrol"
 )
 
 func Test_PullTemplates(t *testing.T) {

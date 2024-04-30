@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/openfaas/faas-cli/proxy"
-	types "github.com/openfaas/faas-provider/types"
+	"github.com/innoobijr/faas-cli/proxy"
+	types "github.com/innoobijr/faas-provider/types"
 	"github.com/spf13/cobra"
 )
 

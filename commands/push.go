@@ -9,12 +9,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/openfaas/faas-cli/exec"
+	"github.com/innoobijr/faas-cli/exec"
 
 	"github.com/morikuni/aec"
-	"github.com/openfaas/faas-cli/builder"
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/builder"
+	"github.com/innoobijr/faas-cli/schema"
+	"github.com/innoobijr/faas-cli/stack"
 	"github.com/spf13/cobra"
 )
 

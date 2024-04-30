@@ -20,8 +20,8 @@ import (
 	"strings"
 
 	v2execute "github.com/alexellis/go-execute/v2"
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/schema"
+	"github.com/innoobijr/faas-cli/stack"
 
 	hmac "github.com/alexellis/hmac/v2"
 )

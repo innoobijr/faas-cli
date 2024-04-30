@@ -11,7 +11,7 @@ import (
 
 	"io/ioutil"
 
-	"github.com/openfaas/faas-cli/test"
+	"github.com/innoobijr/faas-cli/test"
 )
 
 func Test_preRunSecretUpdate_NoArgs_Fails(t *testing.T) {

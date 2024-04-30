@@ -9,9 +9,9 @@ import (
 	"os"
 	"sort"
 
-	"github.com/openfaas/faas-cli/proxy"
-	"github.com/openfaas/faas-cli/stack"
-	"github.com/openfaas/faas-provider/types"
+	"github.com/innoobijr/faas-cli/proxy"
+	"github.com/innoobijr/faas-cli/stack"
+	"github.com/innoobijr/faas-provider/types"
 	"github.com/spf13/cobra"
 )
 

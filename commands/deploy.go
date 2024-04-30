@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/openfaas/faas-cli/builder"
-	"github.com/openfaas/faas-cli/proxy"
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-cli/stack"
-	"github.com/openfaas/faas-cli/util"
+	"github.com/innoobijr/faas-cli/builder"
+	"github.com/innoobijr/faas-cli/proxy"
+	"github.com/innoobijr/faas-cli/schema"
+	"github.com/innoobijr/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/util"
 
 	"github.com/spf13/cobra"
 	yaml "gopkg.in/yaml.v3"

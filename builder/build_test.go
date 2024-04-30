@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/stack"
 )
 
 func Test_isLanguageTemplate_Dockerfile(t *testing.T) {

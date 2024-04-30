@@ -10,8 +10,8 @@ import (
 	"os"
 
 	"github.com/alexellis/hmac"
-	"github.com/openfaas/faas-cli/proxy"
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/proxy"
+	"github.com/innoobijr/faas-cli/stack"
 	"github.com/spf13/cobra"
 )
 

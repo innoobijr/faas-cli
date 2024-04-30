@@ -12,8 +12,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/openfaas/faas-cli/builder"
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/builder"
+	"github.com/innoobijr/faas-cli/stack"
 	"github.com/spf13/cobra"
 )
 

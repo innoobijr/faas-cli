@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/openfaas/faas-cli/util"
-	"github.com/openfaas/faas-provider/types"
+	"github.com/innoobijr/faas-cli/util"
+	"github.com/innoobijr/faas-provider/types"
 	"github.com/spf13/cobra"
 )
 

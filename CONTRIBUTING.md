@@ -6,7 +6,7 @@ This project is licensed under the MIT License.
 
 ## Guidelines apply from main OpenFaaS repo
 
-See guide for [FaaS](https://github.com/openfaas/faas/blob/master/CONTRIBUTING.md) here.
+See guide for [FaaS](https://github.com/innoobijr/faas/blob/master/CONTRIBUTING.md) here.
 
 ## Unit testing with Golang
 
@@ -22,7 +22,7 @@ Install Docker because it is used to build Docker images if you create new funct
 
 * OpenFaaS - deployed and live
 
-This CLI can build and deploy templated functions, so it's best if you have FaaS started up on your laptop. Head over to http://github.com/openfaas/faas/ and get up and running with a sample stack in 60 seconds.
+This CLI can build and deploy templated functions, so it's best if you have FaaS started up on your laptop. Head over to http://github.com/innoobijr/faas/ and get up and running with a sample stack in 60 seconds.
 
 * Golang
 
@@ -43,7 +43,7 @@ export PATH=$PATH:$GOPATH/bin
 Migrate all imports/references to OpenFaaS org
 $ mkdir -p $GOPATH/src/github.com/openfaas/
 $ cd $GOPATH/src/github.com/openfaas/
-$ git clone https://github.com/openfaas/faas-cli
+$ git clone https://github.com/innoobijr/faas-cli
 $ cd faas-cli
 $ make local-install
 ```

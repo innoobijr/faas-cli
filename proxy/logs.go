@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/openfaas/faas-provider/logs"
+	"github.com/innoobijr/faas-provider/logs"
 )
 
 // GetLogs return stream for the logs

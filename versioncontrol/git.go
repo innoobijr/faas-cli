@@ -3,7 +3,7 @@ package versioncontrol
 import (
 	"strings"
 
-	"github.com/openfaas/faas-cli/exec"
+	"github.com/innoobijr/faas-cli/exec"
 )
 
 // GitClone defines the command to clone a repo into a directory

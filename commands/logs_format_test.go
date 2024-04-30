@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/openfaas/faas-provider/logs"
+	"github.com/innoobijr/faas-provider/logs"
 )
 
 func Test_JSONLogFormatter(t *testing.T) {

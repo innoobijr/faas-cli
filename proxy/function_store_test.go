@@ -5,8 +5,8 @@ package proxy
 
 import (
 	"fmt"
-	v2 "github.com/openfaas/faas-cli/schema/store/v2"
-	"github.com/openfaas/faas-cli/test"
+	v2 "github.com/innoobijr/faas-cli/schema/store/v2"
+	"github.com/innoobijr/faas-cli/test"
 	"net/http"
 	"reflect"
 	"testing"
@@ -25,7 +25,7 @@ const testStack = `
             "armhf": "functions/nodeinfo-http:latest-armhf",
             "x86_64": "functions/nodeinfo-http:latest"
         },
-        "repo_url": "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo"
+        "repo_url": "https://github.com/innoobijr/faas/tree/master/sample-functions/NodeInfo"
     }]
 }
 `
@@ -52,7 +52,7 @@ func Test_Generate(t *testing.T) {
 		Name:                   "nodeinfo",
 		Description:            "Get info about the machine that you're deployed on. Tells CPU count, hostname, OS, and Uptime",
 		Images:                 map[string]string{"arm64": "functions/nodeinfo:arm64", "armhf": "functions/nodeinfo-http:latest-armhf", "x86_64": "functions/nodeinfo-http:latest"},
-		RepoURL:                "https://github.com/openfaas/faas/tree/master/sample-functions/NodeInfo",
+		RepoURL:                "https://github.com/innoobijr/faas/tree/master/sample-functions/NodeInfo",
 		ReadOnlyRootFilesystem: false,
 		Environment:            nil,
 		Labels:                 nil,

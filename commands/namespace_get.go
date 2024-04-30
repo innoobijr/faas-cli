@@ -9,7 +9,7 @@ import (
 	"io"
 	"text/tabwriter"
 
-	"github.com/openfaas/faas-provider/types"
+	"github.com/innoobijr/faas-provider/types"
 	"github.com/spf13/cobra"
 )
 

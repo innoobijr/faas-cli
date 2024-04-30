@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/openfaas/faas-cli/config"
+	"github.com/innoobijr/faas-cli/config"
 	"github.com/spf13/cobra"
 )
 

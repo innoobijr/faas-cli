@@ -11,8 +11,8 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/openfaas/faas-cli/test"
-	types "github.com/openfaas/faas-provider/types"
+	"github.com/innoobijr/faas-cli/test"
+	types "github.com/innoobijr/faas-provider/types"
 )
 
 func makeExpectedGetFunctionInfoResponse() types.FunctionStatus {

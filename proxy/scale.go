@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"path/filepath"
 
-	types "github.com/openfaas/faas-provider/types"
+	types "github.com/innoobijr/faas-provider/types"
 )
 
 // ScaleFunction scale a function

@@ -13,9 +13,9 @@ import (
 
 	"github.com/alexellis/arkade/pkg/get"
 	"github.com/morikuni/aec"
-	"github.com/openfaas/faas-cli/proxy"
-	"github.com/openfaas/faas-cli/stack"
-	"github.com/openfaas/faas-cli/version"
+	"github.com/innoobijr/faas-cli/proxy"
+	"github.com/innoobijr/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/version"
 	"github.com/spf13/cobra"
 )
 
@@ -44,7 +44,7 @@ var versionCmd = &cobra.Command{
 	Long: fmt.Sprintf(`The version command returns the current clients version information.
 
 This currently consists of the GitSHA from which the client was built.
-- https://github.com/openfaas/faas-cli/tree/%s`, version.GitCommit),
+- https://github.com/innoobijr/faas-cli/tree/%s`, version.GitCommit),
 	Example: `  faas-cli version
   faas-cli version --short-version`,
 	RunE: runVersionE,

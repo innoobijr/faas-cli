@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/openfaas/faas-cli/test"
-	"github.com/openfaas/faas-provider/logs"
+	"github.com/innoobijr/faas-cli/test"
+	"github.com/innoobijr/faas-provider/logs"
 )
 
 type testTokenAuth struct {

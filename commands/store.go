@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/openfaas/faas-cli/proxy"
-	storeV2 "github.com/openfaas/faas-cli/schema/store/v2"
+	"github.com/innoobijr/faas-cli/proxy"
+	storeV2 "github.com/innoobijr/faas-cli/schema/store/v2"
 	"github.com/spf13/cobra"
 )
 

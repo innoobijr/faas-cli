@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/openfaas/faas-cli/test"
-	types "github.com/openfaas/faas-provider/types"
+	"github.com/innoobijr/faas-cli/test"
+	types "github.com/innoobijr/faas-provider/types"
 )
 
 var expectedSecretList = []types.Secret{

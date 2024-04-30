@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/openfaas/faas-cli/version"
+	"github.com/innoobijr/faas-cli/version"
 )
 
 // Client an API client to perform all operations

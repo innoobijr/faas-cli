@@ -3,7 +3,7 @@
 
 package schema
 
-import "github.com/openfaas/faas-provider/types"
+import "github.com/innoobijr/faas-provider/types"
 
 // FunctionDescription information related to a function
 type FunctionDescription struct {

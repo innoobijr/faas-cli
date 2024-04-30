@@ -5,11 +5,11 @@ package commands
 import (
 	"testing"
 
-	v2 "github.com/openfaas/faas-cli/schema/store/v2"
+	v2 "github.com/innoobijr/faas-cli/schema/store/v2"
 
-	"github.com/openfaas/faas-cli/schema"
+	"github.com/innoobijr/faas-cli/schema"
 
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/stack"
 )
 
 var generateTestcases = []struct {

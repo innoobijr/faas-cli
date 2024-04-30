@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/openfaas/faas-cli/util"
+	"github.com/innoobijr/faas-cli/util"
 
-	"github.com/openfaas/faas-cli/proxy"
+	"github.com/innoobijr/faas-cli/proxy"
 	"github.com/spf13/cobra"
 )
 

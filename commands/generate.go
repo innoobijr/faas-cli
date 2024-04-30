@@ -9,15 +9,15 @@ import (
 	"os"
 	"sort"
 
-	"github.com/openfaas/faas-cli/builder"
-	v2 "github.com/openfaas/faas-cli/schema/store/v2"
+	"github.com/innoobijr/faas-cli/builder"
+	v2 "github.com/innoobijr/faas-cli/schema/store/v2"
 
-	"github.com/openfaas/faas-cli/proxy"
-	"github.com/openfaas/faas-cli/schema"
-	knativev1 "github.com/openfaas/faas-cli/schema/knative/v1"
-	openfaasv1 "github.com/openfaas/faas-cli/schema/openfaas/v1"
-	"github.com/openfaas/faas-cli/stack"
-	"github.com/openfaas/faas-cli/util"
+	"github.com/innoobijr/faas-cli/proxy"
+	"github.com/innoobijr/faas-cli/schema"
+	knativev1 "github.com/innoobijr/faas-cli/schema/knative/v1"
+	openfaasv1 "github.com/innoobijr/faas-cli/schema/openfaas/v1"
+	"github.com/innoobijr/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/util"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 

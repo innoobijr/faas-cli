@@ -11,7 +11,7 @@ import (
 
 	"regexp"
 
-	"github.com/openfaas/faas-cli/test"
+	"github.com/innoobijr/faas-cli/test"
 )
 
 const tlsNoVerify = true

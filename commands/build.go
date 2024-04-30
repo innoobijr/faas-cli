@@ -12,12 +12,12 @@ import (
 	"time"
 
 	"github.com/morikuni/aec"
-	"github.com/openfaas/faas-cli/builder"
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-cli/stack"
-	"github.com/openfaas/faas-cli/util"
+	"github.com/innoobijr/faas-cli/builder"
+	"github.com/innoobijr/faas-cli/schema"
+	"github.com/innoobijr/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/util"
 
-	"github.com/openfaas/faas-cli/versioncontrol"
+	"github.com/innoobijr/faas-cli/versioncontrol"
 	"github.com/spf13/cobra"
 )
 

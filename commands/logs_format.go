@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/openfaas/faas-cli/flags"
-	"github.com/openfaas/faas-provider/logs"
+	"github.com/innoobijr/faas-cli/flags"
+	"github.com/innoobijr/faas-provider/logs"
 )
 
 // LogFormatter is a function that converts a log message to a string based on the supplied options

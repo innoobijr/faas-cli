@@ -12,10 +12,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/openfaas/faas-cli/flags"
-	"github.com/openfaas/faas-provider/logs"
+	"github.com/innoobijr/faas-cli/flags"
+	"github.com/innoobijr/faas-provider/logs"
 
-	"github.com/openfaas/faas-cli/proxy"
+	"github.com/innoobijr/faas-cli/proxy"
 	"github.com/spf13/cobra"
 )
 

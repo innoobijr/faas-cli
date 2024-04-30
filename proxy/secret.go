@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"net/url"
 
-	types "github.com/openfaas/faas-provider/types"
+	types "github.com/innoobijr/faas-provider/types"
 )
 
 const (

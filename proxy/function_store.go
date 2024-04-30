@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	v2 "github.com/openfaas/faas-cli/schema/store/v2"
+	v2 "github.com/innoobijr/faas-cli/schema/store/v2"
 )
 
 type StoreResult struct {

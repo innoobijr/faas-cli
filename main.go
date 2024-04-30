@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/openfaas/faas-cli/commands"
+	"github.com/innoobijr/faas-cli/commands"
 )
 
 func main() {

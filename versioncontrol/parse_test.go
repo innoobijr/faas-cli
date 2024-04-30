@@ -38,7 +38,7 @@ func Test_IsGitRemote(t *testing.T) {
 		name string
 		url  string
 	}{
-		{name: "git protocol with hash", url: "git://github.com/openfaas/faas.git#ff78lf9h"},
+		{name: "git protocol with hash", url: "git://github.com/innoobijr/faas.git#ff78lf9h"},
 		{name: "local repo file protocol", url: "file:///path/to/repo.git/"},
 		{name: "ssh missing username and port", url: "host.xz:/path/to/repo.git"},
 		{name: "ssh username and missing port", url: "user@host.xz:path/to/repo.git"},
@@ -93,7 +93,7 @@ func Test_IsPinnedGitRemote(t *testing.T) {
 		{name: "scp style with ip address without pin", url: "git@192.168.101.127:user/project.git"},
 		{name: "scp style with hostname without pin", url: "git@github.com:user/project.git"},
 		{name: "git protocol without .git suffix and no tag", url: "git://host.xz/path/to/repo"},
-		{name: "git protocol with hash", url: "git://github.com/openfaas/faas.git#ff78lf9h@feature/branch"},
+		{name: "git protocol with hash", url: "git://github.com/innoobijr/faas.git#ff78lf9h@feature/branch"},
 		{name: "local repo file protocol", url: "file:///path/to/repo.git/@feature/branch"},
 		{name: "ssh missing username and port", url: "host.xz:/path/to/repo.git" + pinCharater + "feature-branch"},
 		{name: "ssh username and missing port", url: "user@host.xz:path/to/repo.git" + pinCharater + "v1.2.3"},

@@ -13,9 +13,9 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/stack"
 
-	types "github.com/openfaas/faas-provider/types"
+	types "github.com/innoobijr/faas-provider/types"
 )
 
 var (

@@ -6,7 +6,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/innoobijr/faas-cli/stack"
 	"github.com/spf13/cobra"
 )
 

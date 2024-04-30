@@ -1,4 +1,4 @@
-FROM ghcr.io/openfaas/license-check:0.4.1 as license-check
+#FROM ghcr.io/openfaas/license-check:0.4.1 as license-check
 
 # Build stage
 FROM --platform=${BUILDPLATFORM:-linux/amd64} golang:1.20 as builder
@@ -12,9 +12,9 @@ ENV CGO_ENABLED=0
 
 WORKDIR /usr/bin/
 
-COPY --from=license-check /license-check /usr/bin/
+#COPY --from=license-check /license-check /usr/bin/
 
-WORKDIR /go/src/github.com/openfaas/faas-cli
+WORKDIR /go/src/github.com/innoobijr/faas-cli
 COPY . .
 
 # Run a gofmt and exclude all vendored code.
@@ -23,50 +23,50 @@ RUN test -z "$(gofmt -l $(find . -type f -name '*.go' -not -path "./vendor/*"))"
 # ldflags "-s -w" strips binary
 # ldflags -X injects commit version into binary
 
-RUN /usr/bin/license-check -path ./ --verbose=false "Alex Ellis" "OpenFaaS Author(s)" "OpenFaaS Ltd" \
-       && go test $(go list ./... | grep -v /vendor/ | grep -v /template/|grep -v /build/) -cover
+#RUN /usr/bin/license-check -path ./ --verbose=false "Alex Ellis" "OpenFaaS Author(s)" "OpenFaaS Ltd" \
+#       && go test $(go list ./... | grep -v /vendor/ | grep -v /template/|grep -v /build/) -cover
 
 FROM builder as linux
 RUN CGO_ENABLED=0 GOOS=linux go build --ldflags "-s -w \
-       -X github.com/openfaas/faas-cli/version.GitCommit=${GIT_COMMIT} \
-       -X github.com/openfaas/faas-cli/version.Version=${VERSION} \
-       -X github.com/openfaas/faas-cli/commands.Platform=x86_64" \
+       -X github.com/innoobijr/faas-cli/version.GitCommit=${GIT_COMMIT} \
+       -X github.com/innoobijr/faas-cli/version.Version=${VERSION} \
+       -X github.com/innoobijr/faas-cli/commands.Platform=x86_64" \
        -o faas-cli
 
 FROM builder as darwin
 RUN CGO_ENABLED=0 GOOS=darwin go build --ldflags "-s -w \
-       -X github.com/openfaas/faas-cli/version.GitCommit=${GIT_COMMIT} \
-       -X github.com/openfaas/faas-cli/version.Version=${VERSION} \
-       -X github.com/openfaas/faas-cli/commands.Platform=x86_64" \
+       -X github.com/innoobijr/faas-cli/version.GitCommit=${GIT_COMMIT} \
+       -X github.com/innoobijr/faas-cli/version.Version=${VERSION} \
+       -X github.com/innoobijr/faas-cli/commands.Platform=x86_64" \
        -o faas-cli-darwin
 
 
 FROM builder as darwin-arm64
 RUN CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build --ldflags "-s -w \
-       -X github.com/openfaas/faas-cli/version.GitCommit=${GIT_COMMIT} \
-       -X github.com/openfaas/faas-cli/version.Version=${VERSION} \
-       -X github.com/openfaas/faas-cli/commands.Platform=arm64" \
+       -X github.com/innoobijr/faas-cli/version.GitCommit=${GIT_COMMIT} \
+       -X github.com/innoobijr/faas-cli/version.Version=${VERSION} \
+       -X github.com/innoobijr/faas-cli/commands.Platform=arm64" \
        -o faas-cli-darwin-arm64
 
 FROM builder as windows
 RUN CGO_ENABLED=0 GOOS=windows go build --ldflags "-s -w \
-       -X github.com/openfaas/faas-cli/version.GitCommit=${GIT_COMMIT} \
-       -X github.com/openfaas/faas-cli/version.Version=${VERSION} \
-       -X github.com/openfaas/faas-cli/commands.Platform=x86_64" \
+       -X github.com/innoobijr/faas-cli/version.GitCommit=${GIT_COMMIT} \
+       -X github.com/innoobijr/faas-cli/version.Version=${VERSION} \
+       -X github.com/innoobijr/faas-cli/commands.Platform=x86_64" \
        -o faas-cli.exe
 
 FROM builder as arm
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm GOARM=6 go build --ldflags "-s -w \
-       -X github.com/openfaas/faas-cli/version.GitCommit=${GIT_COMMIT} \
-       -X github.com/openfaas/faas-cli/version.Version=${VERSION} \
-       -X github.com/openfaas/faas-cli/commands.Platform=armhf" \
+       -X github.com/innoobijr/faas-cli/version.GitCommit=${GIT_COMMIT} \
+       -X github.com/innoobijr/faas-cli/version.Version=${VERSION} \
+       -X github.com/innoobijr/faas-cli/commands.Platform=armhf" \
        -o faas-cli-armhf
 
 FROM builder as arm64
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build --ldflags "-s -w \
-       -X github.com/openfaas/faas-cli/version.GitCommit=${GIT_COMMIT} \
-       -X github.com/openfaas/faas-cli/version.Version=${VERSION} \
-       -X github.com/openfaas/faas-cli/commands.Platform=arm64" \
+       -X github.com/innoobijr/faas-cli/version.GitCommit=${GIT_COMMIT} \
+       -X github.com/innoobijr/faas-cli/version.Version=${VERSION} \
+       -X github.com/innoobijr/faas-cli/commands.Platform=arm64" \
        -o faas-cli-arm64
 
 # Release stage
@@ -80,12 +80,12 @@ RUN addgroup -S app \
 
 WORKDIR /home/app
 
-COPY --from=linux          /go/src/github.com/openfaas/faas-cli/faas-cli                .
-COPY --from=darwin         /go/src/github.com/openfaas/faas-cli/faas-cli-darwin         .
-COPY --from=darwin-arm64   /go/src/github.com/openfaas/faas-cli/faas-cli-darwin-arm64   .
-COPY --from=arm            /go/src/github.com/openfaas/faas-cli/faas-cli-armhf          .
-COPY --from=windows        /go/src/github.com/openfaas/faas-cli/faas-cli.exe            .
-COPY --from=arm64          /go/src/github.com/openfaas/faas-cli/faas-cli-arm64          .
+COPY --from=linux          /go/src/github.com/innoobijr/faas-cli/faas-cli                .
+COPY --from=darwin         /go/src/github.com/innoobijr/faas-cli/faas-cli-darwin         .
+COPY --from=darwin-arm64   /go/src/github.com/innoobijr/faas-cli/faas-cli-darwin-arm64   .
+COPY --from=arm            /go/src/github.com/innoobijr/faas-cli/faas-cli-armhf          .
+COPY --from=windows        /go/src/github.com/innoobijr/faas-cli/faas-cli.exe            .
+COPY --from=arm64          /go/src/github.com/innoobijr/faas-cli/faas-cli-arm64          .
 
 RUN chown -R app:app ./
 

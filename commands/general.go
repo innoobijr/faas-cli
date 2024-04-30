@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/openfaas/faas-cli/proxy"
-	"github.com/openfaas/go-sdk"
+	"github.com/innoobijr/faas-cli/proxy"
+	"github.com/innoobijr/go-sdk"
 )
 
 var (

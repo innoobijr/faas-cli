@@ -5,7 +5,7 @@
 sleep 5
 
 # Get sample image for resizer function.
-curl -SL https://raw.githubusercontent.com/openfaas/faas/master/sample-functions/ResizeImageMagick/gordon.png > gordon.png
+curl -SL https://raw.githubusercontent.com/innoobijr/faas/master/sample-functions/ResizeImageMagick/gordon.png > gordon.png
 
 echo "Testing nodejs-echo"
 curl -sd "This was the input string." http://127.0.0.1:8080/function/nodejs-echo

@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/openfaas/faas/gateway/types"
+	"github.com/innoobijr/faas/gateway/types"
 )
 
 // GetSystemInfo get system information from /system/info endpoint
